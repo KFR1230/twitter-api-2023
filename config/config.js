@@ -5,7 +5,7 @@ module.exports = {
     database: 'ac_twitter_workspace',
     host: '127.0.0.1',
     dialect: 'mysql',
-    logging: false,
+    logging: false
   },
   test: {
     username: 'root',
@@ -13,7 +13,7 @@ module.exports = {
     database: 'ac_twitter_workspace_test',
     host: '127.0.0.1',
     dialect: 'mysql',
-    logging: false,
+    logging: false
   },
   production: {
     username: 'process.env.DB_USERNAME',
@@ -21,19 +21,19 @@ module.exports = {
     database: 'process.env.DB_NAME',
     host: 'process.env.DB_HOST',
     port: 'process.env.DB_PORT',
-    dialect: 'mysql',
+    dialect: 'mysql'
   },
   travis: {
     username: 'travis',
     database: 'ac_twitter_workspace_test',
     host: '127.0.0.1',
     dialect: 'mysql',
-    logging: false,
+    logging: false
   },
   ghactions: {
     username: 'root',
     database: 'ac_twitter',
     host: '127.0.0.1',
-    dialect: 'mysql',
+    dialect: 'mysql'
   }
 }
