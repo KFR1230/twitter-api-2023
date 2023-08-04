@@ -13,9 +13,9 @@ if (config.use_env_variable) {
   sequelize = new Sequelize(process.env[config.use_env_variable], config);
 } else {
   sequelize = new Sequelize(config.database, config.username, config.password, {
-    host: config.host,
+    host: process.env.DB_HOST,
     dialect: 'mysql',
-    port: process.env.DB_PORT // 使用 process.env.DB_PORT 作為端口號
+    port: process.env.DB_PORT, // 使用 process.env.DB_PORT 作為端口號
   }); 
 }
 
