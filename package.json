@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "NODE_ENV=production node app.js",
+    "start-pm2": "NODE_ENV=production pm2 start app.js", 
     "dev": "NODE_ENV=development nodemon app.js",
     "test": "mocha test --exit --recursive --timeout 5000",
     "lint": "eslint src/*.js"
